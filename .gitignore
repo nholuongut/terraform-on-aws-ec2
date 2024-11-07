@@ -1,0 +1,21 @@
+/ADDITIONAL-TOPICS
+FUTURE-TOPICS
+#.gitignore
+
+# macOS Files
+.DS_Store
+
+# Ignore .sh files
+#*.sh
+
+# Terraform Files and Folders
+.terraform
+*.tfstate
+*.tfstate.backup
+#.terraform.lock.hcl
+#*.tfvars
+
+# Ignore .pem files
+#*.pem
+BACKUP-BEFORE-DEC2023-UPDATES
+V1-UPDATES-DEC2023
