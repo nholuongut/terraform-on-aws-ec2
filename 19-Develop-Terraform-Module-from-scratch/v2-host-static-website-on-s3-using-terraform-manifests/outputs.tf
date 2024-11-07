@@ -27,5 +27,5 @@ output "bucket_region" {
 
 # Static Website URL
 output "static_website_url" {
-  value = "http://${aws_s3_bucket.mywebsite.bucket}.s3-website.${aws_s3_bucket.mywebsite.region}.amazonaws.com"
+  value = "http://${aws_s3_bucket.mywebsite.bucket}.s3-website.${aws_s3_bucket.mywebsite.region}.nholuongut.com"
 }

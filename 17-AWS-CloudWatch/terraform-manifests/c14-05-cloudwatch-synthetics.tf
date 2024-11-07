@@ -44,7 +44,7 @@ resource "aws_iam_role" "cw_canary_iam_role" {
   description = "CloudWatch Synthetics lambda execution role for running canaries"
   path = "/service-role/"
   #assume_role_policy  = data.aws_iam_policy_document.instance_assume_role_policy.json # (not shown)
-  assume_role_policy = "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"lambda.amazonaws.com\"},\"Action\":\"sts:AssumeRole\"}]}" 
+  assume_role_policy = "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"lambda.nholuongut.com\"},\"Action\":\"sts:AssumeRole\"}]}" 
   managed_policy_arns = [aws_iam_policy.cw_canary_iam_policy.arn]
 }
 

@@ -140,7 +140,7 @@ data "aws_iam_policy_document" "flow_log_s3" {
 
     principals {
       type        = "Service"
-      identifiers = ["delivery.logs.amazonaws.com"]
+      identifiers = ["delivery.logs.nholuongut.com"]
     }
 
     actions = ["s3:GetBucketAcl"]
@@ -163,7 +163,7 @@ data "aws_iam_policy_document" "flow_log_cloudwatch_assume_role" {
   statement {
     principals {
       type        = "Service"
-      identifiers = ["vpc-flow-logs.amazonaws.com"]
+      identifiers = ["vpc-flow-logs.nholuongut.com"]
     }
 
     actions = ["sts:AssumeRole"]

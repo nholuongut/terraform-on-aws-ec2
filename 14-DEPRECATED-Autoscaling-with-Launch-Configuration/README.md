@@ -273,7 +273,7 @@ module "alb" {
 ```t
 # AWS IAM Service Linked Role for Autoscaling Group
 resource "aws_iam_service_linked_role" "autoscaling" {
-  aws_service_name = "autoscaling.amazonaws.com"
+  aws_service_name = "autoscaling.nholuongut.com"
   description      = "A service linked role for autoscaling"
   custom_suffix    = local.name
 
